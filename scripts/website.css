@@ -1,0 +1,14 @@
+*.primary {background-color: rgb(119, 0, 0)}
+*.secondary {background-color: rgb(85, 0, 0)}
+*.tertiary {background-color: rgb(65, 89, 127)}
+*.background {background-color: rgb(255, 255, 255)}
+h1#website-title {font-family: arial, verdana, sans-serif; font-size: 36px; font-weight: normal; color: rgb(255, 255, 255); font-style: normal; text-decoration: none}
+h2#website-slogan {font-family: verdana, arial, sans-serif; font-size: 14px; font-weight: bold; color: rgb(255, 255, 255); font-style: italic; text-decoration: none}
+*#content {font-family: verdana, arial, sans-serif; font-size: 13px; font-weight: normal; color: rgb(0, 0, 0); font-style: normal; text-decoration: none}
+*#content a:link {font-family: verdana, arial, sans-serif; font-size: 13px; font-weight: normal; color: rgb(65, 89, 127); font-style: normal; text-decoration: none}
+*#content a:active {font-family: verdana, arial, sans-serif; font-size: 13px; font-weight: normal; color: rgb(65, 89, 127); font-style: normal; text-decoration: none}
+*#content a:visited {font-family: verdana, arial, sans-serif; font-size: 13px; font-weight: normal; color: rgb(65, 89, 127); font-style: normal; text-decoration: none}
+*#content a:hover {font-family: verdana, arial, sans-serif; font-size: 13px; font-weight: normal; color: rgb(153, 0, 0); font-style: normal; text-decoration: underline}
+*#navcontainer div a h3 {font-family: verdana, arial, sans-serif; font-size: 13px; font-weight: bold; color: rgb(255, 255, 255); font-style: normal; text-decoration: none}
+*#navcontainer div a:hover h3 {font-weight: bold; color: rgb(65, 89, 127); font-style: normal; text-decoration: none; background-color: rgb(145, 194, 239)}
+*#navcontainer div a:hover {font-weight: bold; color: rgb(65, 89, 127); font-style: normal; text-decoration: none; background-color: rgb(145, 194, 239)}

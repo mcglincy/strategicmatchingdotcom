@@ -1,0 +1,358 @@
+/*
+-----------------------------------------------------------------------------------------
+CSS document: ImageCafe Template Styles
+Created: 03/08/2006
+Last Modified: 10/16/2006
+NOTE: Template styles included here cannot be changed by the customer
+-------------------------------------------------------------------------------------- */
+* {margin:0;padding:0;}  /* zero out everything */
+body {
+	width:100%;
+	text-align: center;
+}
+/*
+-----------------------------------------------------------------------------------------
+Global
+-------------------------------------------------------------------------------------- */
+div {position:relative;}
+h4, h5 {margin:10px;}
+ul, ol {
+	margin:10px;
+	padding:0 0 0 20px;
+}
+ol {padding:0 0 0 25px;}
+.clearer {clear:both;}
+#printwrap {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+/*
+-----------------------------------------------------------------------------------------
+General Layout Structure
+-------------------------------------------------------------------------------------- */
+#nav-left, #nav-top {
+	width: 770px;
+	margin: 0 auto;
+	padding-bottom: 5px;	
+	text-align:left;
+}
+#pngcontainer {
+	float: left;
+	width: 769px;
+	padding: 0 10px 0 9px;
+	background-image: url(../images/dropshadow_sides_png.png);
+	/*--- Proper width for all other browsers --*/ 
+		/*voice-family: "\"}\"";
+		voice-family:inherit;
+	width: 750px;	*/
+}
+#inner {
+	float: left;
+	width: 750px;
+}
+#headertop {
+	float:left;
+	width:750px;
+	height:125px;
+	border-bottom: 1px solid #fff;
+	background-image: url(../images/pattern_png.png);
+}
+* html #headertop {
+	background-image:none;
+}
+#image-container {
+	position: absolute;
+	width: 295px;
+	height: 115px;
+	top: 2px;
+	right: 9px;
+	padding: 6px;
+	z-index: 2;
+	background-image: url(../images/accent_png.png);
+	/*--- Proper width for all other browsers --*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+	width: 283px;
+	height: 103px;		
+}
+* html #image-container {
+	background-image:none;
+}
+.accent {
+	float: left;
+	width: 283px;
+	height: 103px;
+}
+#title {
+	position: absolute;
+	width: 750px;
+	height: 90px;
+	top: 31px;
+	left: 0;
+	text-align: left;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+#title h1#website-title {
+	padding-left: 15px;
+	padding-right: 315px;
+	height:90px;
+	overflow:hidden;
+}
+#footer {
+	float: left;
+	width: 750px;
+	height: 46px;
+	padding: 12px 10px 0 0;
+	border-top: 1px solid #fff;
+	text-align: right;
+	background-image:url(../images/pattern_png.png);
+	/*--- Proper width for all other browsers --*/
+			/*voice-family: "\"}\"";
+			voice-family:inherit;
+	width: 740px;	*/
+	height: 33px;	
+}
+
+* html #footer {
+	background-image:none;
+}
+
+#png-bottom {
+	float: left;
+	width: 770px;
+	height: 10px;
+	background-image: url(../images/dropshadow_bottom_png.png);
+}
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-LEFT
+-------------------------------------------------------------------------------------- */
+/*------------------ Layout ------------------*/
+#nav-left #pngcontainer #inner #navcontainer {
+	float: left;
+	width: 141px;
+	/*z-index: 1000;*/
+}
+#nav-left #pngcontainer #inner #navcontainer #nav-wrapper {
+	float: left;
+	/*z-index: 1000;	*/
+}	
+#nav-left #pngcontainer #inner #content {
+	float: right;
+	width: 609px;
+	/*padding: 20px*/;
+	background: #fff;
+	/*--- Proper width for all other browsers --*/
+			voice-family: "\"}\"";
+			voice-family:inherit; 
+	width: 569px;		
+}	
+/*------------------ Navigation Elements ------------------*/
+#nav-left #pngcontainer #inner #navcontainer div, 
+#nav-left #pngcontainer #inner #navcontainer div h3 {
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+	#nav-left #pngcontainer #inner #navcontainer div a:link, 
+	#nav-left #pngcontainer #inner #navcontainer div a:active, 
+	#nav-left #pngcontainer #inner #navcontainer div a:visited {
+		float:left;
+		/*--- Width for IE5/Win only --*/
+			width:141px;
+		text-align:left;	
+		padding:10px;
+		text-decoration:none;
+		/*--- Proper width for all other browsers --*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+			width:121px;
+			word-wrap: break-word;
+	}
+		#nav-left #pngcontainer #inner #navcontainer div a:hover {border-left:0;}
+		#nav-left #pngcontainer #inner #navcontainer div div.submenu, 
+		#nav-left #pngcontainer #inner #navcontainer div div.submenu h3 {
+			float:left;
+			display:block;
+		}
+		#nav-left #pngcontainer #inner #navcontainer div div.submenu {
+			position:absolute;
+			top:0;
+			left:0;
+			visibility: hidden;
+
+			border-left:1px solid #fff;
+			width:141px;
+		}
+			#nav-left #pngcontainer #inner #navcontainer div div.submenu div {display:block;}
+			#nav-left #pngcontainer #inner #navcontainer div div.submenu a:link, 
+			#nav-left #pngcontainer #inner #navcontainer div div.submenu a:active, 
+			#nav-left #pngcontainer #inner #navcontainer div div.submenu a:visited {
+				float:left;
+				width:130px;
+				margin 0;
+				word-wrap: break-word;
+			}
+				#nav-left #pngcontainer #inner #navcontainer div div.submenu a:hover {padding-left:10px;}	
+			
+/*------------------ Table Structures ------------------*/	
+#nav-left #pngcontainer #inner #content #content-table {width:569px;}
+#nav-left #pngcontainer #inner #content #content-table p {margin:15px 0;}	
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-TOP
+-------------------------------------------------------------------------------------- */
+#nav-top #pngcontainer {
+	float: left;
+	width: 769px;
+	/*z-index: 1000;*/
+}
+#nav-top #pngcontainer #inner #navcontainer {
+	float: left;
+	width: 740px;
+	/*z-index: 1000;*/
+}
+#nav-top #pngcontainer #inner #navcontainer #nav-wrapper {
+	float: left;
+	/*width: 740px;*/
+	/*z-index: 1000;*/	
+}	
+#nav-top #pngcontainer #inner #content {
+	float: right;
+	width: 730px;
+	padding: 10px 25px;
+	background: #fff; 
+	/*--- Proper width for all other browsers --*/
+		/*voice-family: "\"}\"";
+		voice-family:inherit;
+	width: 700px;		*/
+}	
+/*------------------ Navigation Elements ------------------*/
+#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div, 
+#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div h3 {
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+	#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div a:link, 
+	#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div a:active, 
+	#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div a:visited {
+		float:left;
+		padding:7px 15px 3px 15px;
+		/*height:20px;*/
+		text-decoration:none;
+		white-space: nowrap;
+	}
+	#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div a:hover {padding-top:7px;}
+		#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div div.submenu {
+			position:absolute;
+			top:0;
+			left:0;
+			visibility: hidden;
+			width:141px;
+			margin-top: -2px;
+		}
+			#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div div.submenu a:link, 
+			#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div div.submenu a:active, 
+			#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div div.submenu a:visited {
+				float:left;
+				width:150px;
+				border-top:1px solid #fff;
+			}
+			#nav-top #pngcontainer #inner #navcontainer #nav-wrapper div div.submenu a:hover {
+				border-top:0;
+				padding-top:8px;
+			}
+			
+/*------------------ Table Structures ------------------*/	
+#nav-top #pngcontainer #inner #content #content-table {width:700px;}
+#nav-top #pngcontainer #inner #content #content-table #content-table-main{width:700px;}
+#nav-top #pngcontainer #inner #content #content-table p {/*margin:15px 0;*/}	
+
+/*------------------ content styling ------------------*/	
+#content h1, #content h2, #content h3, 
+#content h4, #content h5, #content h6 {
+	margin: 5px 0;
+}
+#content h1 {
+	font-size:32px;
+}	
+#content h2 {
+	font-size:28px;
+}
+#content h3 {
+	font-size:24px;
+}
+#content h4 {
+	font-size:20px;
+}
+#content h5 {
+	font-size:18px;
+}
+#content h6 {
+	font-size:14px;
+}
+/*------------------ no-accent adjustments ------------------*/		
+.accent-none {display:none;}
+/*
+-----------------------------------------------------------------------------------------
+=WIDE TEMPLATE - GLOBAL
+-------------------------------------------------------------------------------------- */
+body#wide #nav-left, body#wide #nav-top {
+	width: 970px;
+}
+body#wide #pngcontainer {
+	width: 969px;
+	background-image: url(../images/dropshadow_sides_png_wide.png);
+		/*--- Proper width for all other browsers --*/
+		/*voice-family: "\"}\"";
+		voice-family:inherit;
+	width: 950px;	*/
+}
+body#wide #pngcontainer #inner {
+	width: 969px;
+}
+body#wide #pngcontainer #inner #headertop {
+	width:969px;
+}
+body#wide #pngcontainer #inner #headertop #title {
+	width: 950px;
+}
+body#wide #pngcontainer #footer {
+	width: 950px;
+	/*--- Proper width for all other browsers --*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+	width: 940px;		
+}
+body#wide #png-bottom {
+	width: 950px;
+	height: 10px;
+	background-image: url(../images/dropshadow_bottom_png_wide.png);
+}
+/*
+-----------------------------------------------------------------------------------------
+=WIDE TEMPLATE - #NAV-LEFT
+-------------------------------------------------------------------------------------- */	
+body#wide #nav-left #pngcontainer #inner #content {
+	width: 806px;
+	/*--- Proper width for all other browsers --*/
+			/*voice-family: "\"}\"";
+			voice-family:inherit; 
+	width: 766px;*/
+}	
+body#wide #nav-left #pngcontainer #inner #content-table {width:806px;}
+/*
+-----------------------------------------------------------------------------------------
+=WIDE TEMPLATE - #NAV-TOP
+-------------------------------------------------------------------------------------- */
+body#wide #nav-top #content,
+body#wide #nav-top #navcontainer, body#wide #nav-top #navcontainer #nav-wrapper {
+	/*width: 950px;*/
+	width: 900px;	
+}
+body#wide #nav-top #pngcontainer #inner #content-table {width:910px;}
