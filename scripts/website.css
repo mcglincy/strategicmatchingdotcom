@@ -10,5 +10,8 @@ h2#website-slogan {font-family: verdana, arial, sans-serif; font-size: 14px; fon
 *#content a:visited {font-family: verdana, arial, sans-serif; font-size: 13px; font-weight: normal; color: rgb(65, 89, 127); font-style: normal; text-decoration: none}
 *#content a:hover {font-family: verdana, arial, sans-serif; font-size: 13px; font-weight: normal; color: rgb(153, 0, 0); font-style: normal; text-decoration: underline}
 *#navcontainer div a h3 {font-family: verdana, arial, sans-serif; font-size: 13px; font-weight: bold; color: rgb(255, 255, 255); font-style: normal; text-decoration: none}
-*#navcontainer div a:hover h3 {font-weight: bold; color: rgb(65, 89, 127); font-style: normal; text-decoration: none; background-color: rgb(145, 194, 239)}
-*#navcontainer div a:hover {font-weight: bold; color: rgb(65, 89, 127); font-style: normal; text-decoration: none; background-color: rgb(145, 194, 239)}
+*#navcontainer div a:hover h3, *#navcontainer div.active a h3 {font-weight: bold; color: rgb(65, 89, 127); font-style: normal; text-decoration: none; background-color: rgb(145, 194, 239)}
+*#navcontainer div a:hover, *#navcontainer div.active a {font-weight: bold; color: rgb(65, 89, 127); font-style: normal; text-decoration: none; background-color: rgb(145, 194, 239)}
+*#navcontainer #nav-wrapper div.active {
+  background-color: rgb(145, 194, 239) !important;
+}
